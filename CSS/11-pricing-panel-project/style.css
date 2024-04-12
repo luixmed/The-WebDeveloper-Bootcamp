@@ -1,0 +1,148 @@
+/* =================== BASIC STYLES =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+}
+
+/* LINK */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* IMAGE */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =================== GENERAL STYLES =================== */
+body {
+  /* Font */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+
+  /* Style */
+  background-color: #60a9ff;
+
+  /* Box */
+  min-height: 100vh;
+
+  /* Layout */
+  display: grid;
+  place-content: center;
+}
+
+/* =================== PANEL PRICE =================== */
+/* GENERAL LAYOUT */
+.panel {
+  /* Box */
+  width: 100%;
+  max-width: 96rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Style */
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* BORDER SEPARATOR */
+.pricing-plan {
+  /* Box */
+  border-bottom: 1px solid #e1f1ff;
+}
+.pricing-plan:last-child {
+  /* Box */
+  border-bottom: none;
+}
+
+/* IMAGE */
+.pricing-img {
+  margin-bottom: 2.5rem;
+}
+
+/* HEADER */
+.pricing-header {
+  /* Font */
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* FEATURES */
+.pricing-features {
+  /* Font */
+  color: #016ff9;
+  /* Box */
+  margin: 5rem 0 2.5rem;
+}
+.pricing-features-item {
+  /* Font */
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+  /* Box */
+  padding-block: 1.5rem;
+  border-top: 1px solid #e1f1ff;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+/* PRICE */
+.pricing-price {
+  /* Box */
+  display: block;
+
+  /* Font */
+  color: #016ff9;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.pricing-btn {
+  /* Box */
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #9dd1ff;
+  border-radius: 1rem;
+  margin-block: 2.5rem;
+
+  /* Font */
+  color: #348efe;
+
+  /* Animation */
+  transition: background-color 0.2s ease-in-out;
+}
+.pricing-btn:hover,
+.pricing-btn:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-btn.is-featured {
+  color: white;
+  background-color: #48aaff;
+}
+.pricing-btn.is-featured:hover,
+.pricing-btn.is-featured:focus {
+  background-color: #269aff;
+}
